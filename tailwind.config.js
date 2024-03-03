@@ -16,11 +16,10 @@ export default withMT({
     },
     extend: {
       backgroundImage: {
-        'hero-image': "url('./src/Home/Images/background_hero.jpg')",
-        'bg-main': "url('./src/Home/Images/back.jpg')",
-        'section3': "url('./src/Home/Images/back 2.jpg')",
-        'photo-sediting': "url('./src/Photo Editing/Images/background+overlay2.jpg')",
-        'photo-seditingCard1': "url('./src/Photo Editxing/Images/background+overlay2.jpg')",
+        'hero-image': "url('https://www.imbastudio.uz/img/background+overlay.jpg')",
+        'bg-main': "url('https://www.imbastudio.uz/img/back.jpg')",
+        'section3': "url('https://www.imbastudio.uz/img/back%202.jpg')",
+        'photo-sediting': "url('https://www.imbastudio.uz/img/background+overlay2.jpg')",
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
