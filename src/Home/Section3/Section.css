@@ -1,0 +1,8 @@
+.animation:hover {
+    background: linear-gradient(0deg, rgba(105,225,222,0.425), rgb(68,255,214));
+    background-size: cover;
+    color: rgb(11,46,38);
+    transform: scale(1.1);
+    outline: solid 10px rgba(23, 196, 158, 0);
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
