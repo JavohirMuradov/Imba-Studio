@@ -26,812 +26,813 @@ const Section5 = () => {
   var [camera, setCamera] = useState("one")
   var [eventType, setEventType] = useState("wedding")
   var [videoQuality, setVideQuality] = useState("select3")
-  useEffect(() => {
-    function chooseFilm(typeFilm, check) {
-      if (check === true) {
-        switch (typeFilm) {
-          case "Full film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 250)
-                        break;
-                      }
+  function chooseFilm() {
+    if (check === true) {
+      switch (typeFilm) {
+        case "Full film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 120)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 180)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 250)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 140)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 220)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 260)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 300)
-                        break;
-                      }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 250)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
               }
+              break;
             }
-            break;
-          }
-          case "Highlight": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 140)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 170)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 220)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 260)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 300)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 250)
-                        break;
-                      }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 120)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 180)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 250)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
               }
+              break;
             }
-
-            break;
           }
-          case "Social film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 170)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 60)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 90)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 110)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 130)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 170)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-            }
-            break;
-          }
-          case "Feature film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 170)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 250)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total + 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total + 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total + 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total + 210)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-            }
-            break;
-          }
+          break;
         }
-      } else {
-        switch (typeFilm) {
-          case "Full film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 250)
-                        break;
-                      }
+        case "Highlight": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 140)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 220)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 260)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 300)
-                        break;
-                      }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 80)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 250)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 120)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 170)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
               }
+              break;
             }
-            break;
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
           }
-          case "Highlight": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 170)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 250)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
-                    }
-                    break;
-                  }
-                }
-                break;
-              }
-            }
 
-            break;
-          }
-          case "Social film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 170)
-                        break;
-                      }
+          break;
+        }
+        case "Social film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 80)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 60)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 90)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 110)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 130)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 120)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 170)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 60)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 170)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 90)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 110)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 130)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
               }
+              break;
             }
-            break;
-          }
-          case "Feature film": {
-            switch (videoQuality) {
-              case "select3": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 80)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 140)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 170)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
-              }
-              case "select4": {
-                switch (eventType) {
-                  case "wedding": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 120)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 220)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 250)
-                        break;
-                      }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 80)
+                      break;
                     }
-                    break;
-                  }
-                  case "barMitzvah": {
-                    switch (camera) {
-                      case "one": {
-                        setTotal(total - 100)
-                        break;
-                      }
-                      case "two": {
-                        setTotal(total - 150)
-                        break;
-                      }
-                      case "three": {
-                        setTotal(total - 180)
-                        break;
-                      }
-                      case "four": {
-                        setTotal(total - 210)
-                        break;
-                      }
+                    case "two": {
+                      setTotal(total + 120)
+                      break;
                     }
-                    break;
+                    case "three": {
+                      setTotal(total + 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 170)
+                      break;
+                    }
                   }
+                  break;
                 }
-                break;
               }
+              break;
             }
-            break;
           }
+          break;
+        }
+        case "Feature film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 80)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 120)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 170)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total + 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total + 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total + 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total + 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+          }
+          break;
+        }
+      }
+    } else {
+      switch (typeFilm) {
+        case "Full film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 140)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 220)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 260)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 300)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+          }
+          break;
+        }
+        case "Highlight": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 80)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 170)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+          }
+
+          break;
+        }
+        case "Social film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 80)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 170)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 60)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 90)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 110)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 130)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 80)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 170)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+          }
+          break;
+        }
+        case "Feature film": {
+          switch (videoQuality) {
+            case "select3": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 80)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 140)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 170)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+            case "select4": {
+              switch (eventType) {
+                case "wedding": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 120)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 220)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 250)
+                      break;
+                    }
+                  }
+                  break;
+                }
+                case "barMitzvah": {
+                  switch (camera) {
+                    case "one": {
+                      setTotal(total - 100)
+                      break;
+                    }
+                    case "two": {
+                      setTotal(total - 150)
+                      break;
+                    }
+                    case "three": {
+                      setTotal(total - 180)
+                      break;
+                    }
+                    case "four": {
+                      setTotal(total - 210)
+                      break;
+                    }
+                  }
+                  break;
+                }
+              }
+              break;
+            }
+          }
+          break;
         }
       }
     }
-    chooseFilm(typeFilm, check)
+  }
+  useEffect(() => {
+    chooseFilm()
   }, [typeFilm, check])
+
   return (
     <section className="px-5 sm:px-32 pb-20 sm:pb-10 pt-5 sm:pt-20 mx-auto bg-[#eee]" id="prices">
       <div className="mb-7">
@@ -918,7 +919,7 @@ const Section5 = () => {
               <input
                 className="relative h-5 w-5 rounded-full border flex focus:bg-blue-700 hover:cursor-pointer"
                 type="radio"
-                name="select"
+                name="select2"
                 onChange={(radio) => { setVideQuality(radio.target.id); }}
                 id="select3"
                 defaultChecked={true}
@@ -933,7 +934,7 @@ const Section5 = () => {
               <input
                 className="relative h-5 w-5 rounded-full border flex focus:bg-blue-700 hover:cursor-pointer"
                 type="radio"
-                name="select"
+                name="select2"
                 onChange={(radio) => { setVideQuality(radio.target.id); }}
                 id="select4"
               />
