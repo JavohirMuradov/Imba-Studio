@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Footer() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
-        <footer className="w-full bg-black p-8">
+        <footer className="w-full p-8">
             <div className="flex flex-row flex-wrap items-center justify-center gap-5 container text-center md:justify-between">
-                <div className="logo text-gray-400">
+                <div className="text-gray-400">
                     <h1 className="text-gray-400 font-semibold text-3xl">
                         IMBA<span className="font-normal">STUDIO</span>
                     </h1>

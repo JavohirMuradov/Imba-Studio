@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
     Navbar,
     Typography,
     Collapse,
     IconButton,
 } from "@material-tailwind/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -17,6 +19,10 @@ function Header() {
             () => window.innerWidth >= 960 && setOpenNav(false),
         );
     }, []);
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     const navList = (
         <ul className="mt-2 mb-4 flex flex-col gap-1 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-1">
@@ -26,9 +32,9 @@ function Header() {
                 className="flex items-center gap-x-2 p-1 font-medium"
             >
 
-                <Link to="/" className="flex items-center font-poppins text-xs">
+                <HashLink smooth to={"/#home"} className="flex items-center font-poppins text-xs">
                     Home
-                </Link>
+                </HashLink>
             </Typography>
             <Typography
                 as="li"
@@ -61,7 +67,7 @@ function Header() {
     );
 
     return (
-        <header className="bg-grey sticky top-0 z-50">
+        <header className="bg-grey sticky top-0 z-50" data-aos="fade-down" data-aos-duration="600" data-aos-once="true">
             <Navbar className="py-5 px-5 font-poppins bg-grey shadow-none rounded-none container border-none">
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Typography

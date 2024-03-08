@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Section.css"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section3 = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
-        <section className='bg-section3 py-10' id='about'>
+        <section className='bg-section3 py-10' id='about' data-aos-once="true" data-aos="zoom-in">
             <div className="container">
                 <div className='flex flex-col items-center'>
                     <h1 className="text-[#6c757d] text-3xl w-11/12">About <span className=" font-light">US</span></h1>

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const filmTypes = [
   {
@@ -832,9 +834,14 @@ const Section5 = () => {
   useEffect(() => {
     chooseFilm()
   }, [typeFilm, check])
+  
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+}, []);
 
   return (
-    <section className="px-5 sm:px-32 pb-20 sm:pb-10 pt-5 sm:pt-20 mx-auto bg-[#eee]" id="prices">
+    <section className="px-5 sm:px-32 pb-20 sm:pb-10 pt-5 sm:pt-20 mx-auto bg-[#eee]" id="prices" data-aos="fade-up">
       <div className="mb-7">
         <a href="#price" aria-hidden="true" className="hidden">
           #
