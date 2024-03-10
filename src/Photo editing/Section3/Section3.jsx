@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section3 = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <section>
             <div className="container">
@@ -11,7 +17,7 @@ const Section3 = () => {
                     <div className="mb-10 w-[100px] h-[3px] bg-[#411b7e] m-auto"></div>
                 </div>
                 <div className="flex gap-4 justify-between flex-wrap xl:flex-nowrap">
-                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between">
+                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between" data-aos="flip-right" data-aos-delay="600">
                         <div>
                             <h2 className="text-center text-2xl">Color Correction</h2>
                             <h1 className="text-center text-4xl">$ 0.20</h1>
@@ -52,7 +58,7 @@ const Section3 = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between">
+                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between" data-aos="flip-right" data-aos-delay="600">
                         <div>
                             <h2 className="text-center text-2xl">Basic Level</h2>
                             <h1 className="text-center text-4xl">$ 2</h1>
@@ -87,7 +93,7 @@ const Section3 = () => {
                         </div>
                     </div>
 
-                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between">
+                    <div className="bg-[#f5f5f5] rounded-xl p-4 w-full flex flex-col justify-between" data-aos="flip-right" data-aos-delay="600">
                         <div>
                             <h2 className="text-center text-2xl">High End Level</h2>
                             <h1 className="text-center text-4xl">$ 10</h1>

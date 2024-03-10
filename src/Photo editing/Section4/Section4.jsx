@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Section4 = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <section className='container'>
             <div className="text-white my-10">
@@ -9,9 +15,8 @@ const Section4 = () => {
                 </h2>
                 <div className="mb-10 w-[100px] h-[3px] bg-[#411b7e] m-auto"></div>
             </div>
-
             <div className="flex gap-4 justify-center flex-wrap xl:flex-nowrap pb-10">
-                <div className="bg-[#f5f5f5] rounded-xl p-4 w-1/3">
+                <div className="bg-[#f5f5f5] rounded-xl p-4 w-1/3" data-aos="fade-right" data-aos-delay="600">
                     <div className="my-4">
                         <h2 className="text-center text-2xl">Wedding Light</h2>
                         <h1 className="text-center text-4xl">$ 100</h1>
@@ -33,8 +38,7 @@ const Section4 = () => {
                         </button>
                     </a>
                 </div>
-
-                <div className="bg-[#f5f5f5] rounded-xl p-4 w-1/3">
+                <div className="bg-[#f5f5f5] rounded-xl p-4 w-1/3" data-aos="fade-left" data-aos-delay="600">
                     <div className="my-4">
                         <h2 className="text-center text-2xl">Wedding Pro</h2>
                         <h1 className="text-center text-4xl">$ 160</h1>

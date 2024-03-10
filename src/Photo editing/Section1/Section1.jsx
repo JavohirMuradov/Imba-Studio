@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Section1 = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section className="">
-      <div className="bg-photo-sediting bg-cover">
+      <div className="bg-photo-sediting bg-cover" data-aos="zoom-in" data-aos-delay="600">
         <div className=" container h-[630.5px]   flex items-center justify-center flex-col gap-5 ">
           <h1 className="text-center w-full text-[2.25rem] text-4xl text-white  ">
             Wedding Photo Editing Services
